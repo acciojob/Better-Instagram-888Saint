@@ -33,6 +33,13 @@ gridItems.forEach(item => {
 
       draggedItem.style.backgroundImage = targetBg;
       e.target.style.backgroundImage = draggedBg;
+
+      // Swap Labels
+      const draggedLabel = draggedItem.querySelector('.label').innerText;
+      const targetLabel = e.target.querySelector('.label').innerText;
+
+      draggedItem.querySelector('.label').innerText = targetLabel;
+      e.target.querySelector('.label').innerText = draggedLabel;
     }
   });
 });

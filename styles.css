@@ -36,6 +36,7 @@ h1 {
   border: 2px solid #ccc;
   cursor: grab;
   transition: transform 0.2s ease-in-out;
+  position: relative; /* Needed for label positioning */
 }
 
 .grid-item:active {
@@ -72,4 +73,18 @@ h1 {
 
 #div6 {
   background-image: url("https://picsum.photos/id/102/300/200");
+}
+
+/* Image Labels */
+.label {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  pointer-events: none; /* Prevent label from interfering with drag events */
 }
