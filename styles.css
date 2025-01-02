@@ -1,47 +1,53 @@
-/* Grid Layout for Images */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 images per row */
-  grid-gap: 20px;
-  justify-content: center;
-  align-items: center;
-  margin: 20px auto;
-  max-width: 700px;
-}
-
-/* Individual Image Styling */
-.image {
-  position: relative;
+#div1 {
+  background-image: url("https://picsum.photos/id/237/200/300");
   height: 300px;
   width: 200px;
+  margin: 20px;
   background-size: cover;
   background-position: center;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  cursor: grab;
-  transition: transform 0.2s ease-in-out;
 }
 
-.image:active {
-  cursor: grabbing;
-  transform: scale(1.05);
+#div2 {
+  background-image: url("https://picsum.photos/seed/picsum/200/300");
+  height: 300px;
+  width: 200px;
+  margin: 20px;
+  background-size: cover;
+  background-position: center;
 }
 
-/* Image Dragging Highlight */
-.image.dragging {
-  opacity: 0.5;
-  border: 2px dashed #00c3ff;
+#div3 {
+  background-image: url("https://picsum.photos/200/300?grayscale");
+  height: 300px;
+  width: 200px;
+  margin: 20px;
+  background-size: cover;
+  background-position: center;
 }
 
-/* Label Styling for Images */
-.image .label {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  padding: 4px 8px;
-  font-size: 14px;
-  border-radius: 4px;
-  pointer-events: none; /* Prevent interaction with the label */
+#div4 {
+  background-image: url("https://picsum.photos/200/300/");
+  height: 300px;
+  width: 200px;
+  margin: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+#div5 {
+  background-image: url("https://picsum.photos/200/300.jpg");
+  height: 300px;
+  width: 200px;
+  margin: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+#div6 {
+  background-image: url("https://picsum.photos/id/102/200/300");
+  height: 300px;
+  width: 200px;
+  margin: 20px;
+  background-size: cover;
+  background-position: center;
 }
