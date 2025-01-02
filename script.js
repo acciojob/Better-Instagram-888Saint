@@ -1,5 +1,5 @@
 // Select all draggable images
-const gridItems = document.querySelectorAll('.grid-item');
+const gridItems = document.querySelectorAll('.image');
 let draggedItem = null;
 
 // Event Listeners for Each Grid Item
